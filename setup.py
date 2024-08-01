@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='your_project',  # Name of your project/package
-    version='0.1',        # Version of your package
-    packages=['your_package'],  # List of all packages to include
+    name='testsourcerep',  # Replace with your project name
+    version='0.1',
+    packages=find_packages(),  # Automatically find packages in the project
     entry_points={
         'console_scripts': [
-            'render=your_package.main:main',  # Command-line script setup
+            'render=my_render_package.main:main',  # Maps the command 'render' to the main function
         ],
     },
 )
