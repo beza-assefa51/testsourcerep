@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),  # Automatically find packages in the project
     entry_points={
         'console_scripts': [
-            'render=my_render_package.main:main',  # Maps the command 'render' to the main function
+            'render=render_project.main:main',  # Maps the command 'render' to the main function
         ],
     },
 )
